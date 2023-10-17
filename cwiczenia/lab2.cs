@@ -1,15 +1,11 @@
+
 ﻿using System;
 using System.Reflection.Metadata.Ecma335;
 
-namespace cwiczenia
-{
-    class Program2
+
+    public class cwiczenia2
     {
-        static void Main(string[] args)
-        {
-            zad7();
-        }
-        static void zad1()
+        public static void zad1()
         {
             int suma = 0, licznik = 0;
             int ocena;
@@ -26,7 +22,7 @@ namespace cwiczenia
             double srednia = suma / licznik;
             Console.WriteLine("Śrenia z ocen wynosi: {0:N}", srednia);
         }
-        static double zad2(double x, double y)
+        public static double zad2(double x, double y)
         {
             return y * Math.Pow(1.06, y);
         }
@@ -71,7 +67,7 @@ namespace cwiczenia
             return mini;
 
         }
-        static void zad3()
+        public static void zad3()
         {
             double[] wyniki = new double[5];
             liczby(wyniki);
@@ -91,7 +87,7 @@ namespace cwiczenia
             return 60 + (dlugosc - K) * S + ocena;
         }
 
-        static void zad4()
+        public static void zad4()
         {
             Console.Write("Podaj odlegosc uzyskana przez skoczka w cm: ");
             if (double.TryParse(Console.ReadLine(), out double metry) == false)
@@ -126,7 +122,7 @@ namespace cwiczenia
             }
             return wynik;
         }
-        static void zad5()
+        public static void zad5()
         {
             Console.Write("Podaj liczbe naturalna, ktorej silnie chcesz poznac: ");
             if (int.TryParse(Console.ReadLine(), out int n) == false)
@@ -144,7 +140,7 @@ namespace cwiczenia
             }
             return true;
         }
-        static void zad6()
+        public static void zad6()
         {
             Console.Write("Podaj liczbe: ");
             if (int.TryParse(Console.ReadLine(), out int n) == false)
@@ -165,7 +161,7 @@ namespace cwiczenia
         {
             return (silnia(n) / (silnia(k) * silnia(n - k)));
         }
-        static void zad7()
+        public static void zad7()
         {
             Console.Write("Podaj pierwsza liczbe naturalna");
             if (int.TryParse(Console.ReadLine(), out int a) == false)
@@ -192,4 +188,3 @@ namespace cwiczenia
             }
         }
     }
-}
