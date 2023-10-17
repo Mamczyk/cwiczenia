@@ -1,16 +1,11 @@
 
+
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace cwiczenia
-{
-    class Program
-    {
 
-        static void Main(string[] args)
-        {
-            zad5();
-        }
+    public class cwiczenia1
+    {
         static double obwod(double r)
         {
             return 2 * Math.PI * r;
@@ -21,7 +16,7 @@ namespace cwiczenia
             double r = Double.Parse(Console.ReadLine());
             return r;
         }
-        static void zad1()
+       public static void zad1()
         {
             double r = pobranie();
             while (r < 0)
@@ -36,7 +31,7 @@ namespace cwiczenia
         {
             return a * b;
         }
-        static void zad2()
+        public static void zad2()
         {
             Console.WriteLine("Podaj dwie liczby, bedace bokami czworokąta, oddzielone przecinkiem");
             string input = Console.ReadLine();
@@ -65,7 +60,7 @@ namespace cwiczenia
             if (a % 2 == 0) { return 1; }
             else return 0;
         }
-        static void zad3()
+       public static void zad3()
         {
 
             Console.Write("Podaj liczbe naturalna: ");
@@ -88,7 +83,7 @@ namespace cwiczenia
             if (c < a) { max = a; }
             return max;
         }
-        static void zad4()
+        public static void zad4()
         {
             Console.Write("Podaj 3 liczby calkowite, oddzielone przecinkiem: ");
             string input = Console.ReadLine();
@@ -124,7 +119,7 @@ namespace cwiczenia
                 Console.WriteLine("Miejsca zerowe to x1 = {0} oraz x2 = {1}", x1, x2);
             }
         }
-        static void zad5()
+        public static void zad5()
         {
             Console.Write("Podaj trzy liczby calkowite, oddzielone przecinkiem, bedace parametrami funkcji kwadratowej: ");
             string input = Console.ReadLine();
@@ -139,5 +134,6 @@ namespace cwiczenia
             }
         }
     }
-}
+
+
 
